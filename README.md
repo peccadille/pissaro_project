@@ -1,3 +1,3 @@
 # pissaro_project
-
-Pour se connecter à votre BDD, configurer le fihier de connexion contenu dans include. 
+## Getting started
+In /www/includes, rename connexion.php.example to connexion.php and change the db settings accordingly.
