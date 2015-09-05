@@ -1,4 +1,6 @@
 <?php
+include("includes/connexion.php");
+
 header('Content-Type: application/json');
 
 //print_r($_GET); // display POST
@@ -85,7 +87,7 @@ else {
 try
 {
 	// Connexion à la base avec la méthode PDO (orientée objet)
-	$bdd = new PDO('mysql:host=mysql-pecccadille.alwaysdata.net;dbname=pecccadille_pissarro;charset=utf8', '87400', 'Wyif2ovI');
+	$bdd = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PWD);
 }
 catch (Exception $e)
 {
