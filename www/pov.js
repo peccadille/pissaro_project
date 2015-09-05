@@ -1,5 +1,13 @@
-var MarkerIcon = L.icon({iconUrl: 'ico/marker-navy.png'});
-var MarkerIcon2 = L.icon({iconUrl: 'ico/marker-gray.png'});
+var MarkerIcon = L.icon({
+	iconUrl: 'ico/marker-navy.png',
+	iconAnchor: [16, 30],
+	popupAnchor: [0, -32]
+});
+var MarkerIcon2 = L.icon({
+	iconUrl: 'ico/marker-gray.png',
+	iconAnchor: [16, 30],
+	popupAnchor: [0, -32]
+});
 
 
 
