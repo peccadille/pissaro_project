@@ -1,0 +1,166 @@
+/* --- STYLES DE BASE --- */
+
+/* Page */
+html {
+  font-size: 100%; /* Évite un bug d'IE 6-7.*/
+}
+body {
+  margin:0;
+  padding:0 0 0 0;
+  font:0.8em Arial, Helvetica, sans-serif;
+  line-height: 1.4; /* À adapter au design. */
+  color:#1e1e1e;
+  background-color:#FFF;
+}
+
+
+/* images */ 
+.leaflet-popup-content img {max-height: 200px; 
+    width: auto}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+
+  line-height: 1.2;
+  font-weight: bold; /* Valeur par défaut. */
+  font-style: normal;
+}
+h1 {
+
+	  margin: 0; 
+	  padding:17px 20px;
+
+  font-size:170%;
+margin-bottom:1em;
+background-color:#f1f1f1;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1em;
+}
+
+/* Listes */
+ul, ol {
+  margin: 0 0 .75em 32px;
+  padding: 0;
+}
+li{
+	list-style-type:none;
+	vertical-align:text-bottom;
+}
+
+/* Paragraphes */
+p {
+  margin: .75em 0; /* Marges plus faibles que par défaut. (7) */
+}
+address {
+  margin: .75em 0;
+  font-style: normal;
+}
+
+/* Liens */
+a {
+  text-decoration: underline;
+}
+/*a:link {
+  color:#fff;
+}
+a:visited {
+  color: #AEE2F0;
+}
+a:hover, a:focus, a:active {
+  color: #e7e7e7;
+}*/
+
+
+/* Pas de bordure autour des images dans les liens */
+a img {
+  border:1px solid #333  ;
+}
+
+/* Divers éléments de type en-ligne (8) */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+/* Formulaires */
+form, fieldset,#liens {
+  margin: 1.5em;
+  padding: 0;
+  border: none;
+}
+input, button, select {
+  vertical-align: top; 
+  font-size:110%;
+}
+label{
+	display:inline-block;
+	width:9.5em;
+}
+#search{
+	font-size:110%;	
+	width:42em;
+	margin:auto;
+}
+.contenu div{
+	text-align:justify;	
+	padding:0 20px;
+}
+hr{
+	border-color:#FFF;	
+	wifth:100%;
+	margin:20px 0;
+}
+.contenu{
+	float:left;
+	clear:left;
+	width:440px;
+}
+.contenu #pres{
+	text-align:right; 
+	padding:0 20px 0 10px;  
+}
+.contenu .infos{
+	padding:0; 
+}
+#sign{
+	position:absolute;
+	left:8px;
+	bottom:0;	
+}
+
+#sign a,#sign a:link,#sign a:visited{text-decoration:none}		
+#sign a:hover,#sign a:focus,#sign a:active{text-decoration:underline}
+.leaflet-popup-content{
+	width:300px;	
+}
+.infos{
+	display:none;
+}	
+#legende{
+	list-style-type:none;
+	position:absolute;
+	right:9px;
+	bottom:25px;
+	width:180px;
+	z-index:1000;
+	background-color:white;
+	margin:0;
+	font-size:0.9em;
+	padding:5px;
+}
+#map{
+	width:100%;
+	height:100%;	
+}
+#cadre_map{
+	margin-left:440px;
+}

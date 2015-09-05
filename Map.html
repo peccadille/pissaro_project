@@ -1,0 +1,63 @@
+
+<html>
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Pissarro à Rouen</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <style type="text/css"></style>
+</head>
+<body>
+
+
+<!-- Formulaire pour sélectionner les oeuvres (à afficher dans la colonne de droite) -->
+ <div class="contenu">
+	<h1>Pissarro à Rouen </h1>
+	<p>Quels tableaux de Pissarro voulez-vous voir ? Vous pouvez choisir plusieurs critères</p>
+	<form name="ajaxform" id="ajaxform" action="artworks.php" method="POST">
+		<p> Les séjours </br>
+			<input type="checkbox" name="stay02" id="2" checked="checked"/> <label for="2">1883</label>
+			<input type="checkbox" name="stay01" id="1" checked="checked"/> <label for="1">début 1896</label></br>
+			<input type="checkbox" name="stay03" id="3" checked="checked"/> <label for="3">fin 1896</label>
+			<input type="checkbox" name="stay04" id="5" checked="checked"/> <label for="5">1898</label>
+		</p>
+		<p> La météo </br>
+			<input type="checkbox" name="weather00" id="w0" checked="checked"/> <label for="w0">à renseigner</label>
+			<input type="checkbox" name="weather01" id="w1" checked="checked"/> <label for="w1">soleil</label></br>
+			<input type="checkbox" name="weather02" id="w2" checked="checked"/> <label for="w2">soleil couchant</label>
+			<input type="checkbox" name="weather03" id="w3" checked="checked"/> <label for="w3">brume</label></br>
+			<input type="checkbox" name="weather04" id="w4" checked="checked"/> <label for="w4">temps gris</label>
+			<input type="checkbox" name="weather05" id="w5" checked="checked"/> <label for="w5">pluie</label>
+		</p>
+		<p> Le moment de la journée </br>
+			<input type="checkbox" name="time00" id="t0" checked="checked"/> <label for="t0">à renseigner</label>
+			<input type="checkbox" name="time01" id="t1" checked="checked"/> <label for="t1">matin</label></br>
+			<input type="checkbox" name="time02" id="t2" checked="checked"/> <label for="t2">après midi</label>
+			<input type="checkbox" name="time03" id="t3" checked="checked"/> <label for="t3">fin de journée</label>
+		</p>
+		<p>
+		    <input type="submit" value="Valider" />
+		</p>
+</form>
+
+</div>
+
+<div class="contenu" id="selected_pov_artworks">
+ <p>A la suite vont s'afficher mes résultats</p>
+</div>
+<div class="contenu">
+ <p>L'oeuvre que vous avez sélectionné</p>
+ <div class="contenu" id="selected_artwork">
+ </div>
+</div>
+<!-- L'affichage de ma carte -->
+<div id="cadre_map">
+<div id="map"></div>
+  <script type="text/javascript" src="layers.js"></script>
+</div>
+  <script type="text/javascript" src="pov.js"></script>
+
+</body>
+</html>
