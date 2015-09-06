@@ -1,4 +1,3 @@
-
 <html>
 <head>
         <meta charset="utf-8">
@@ -18,8 +17,8 @@
 	<p>Quels tableaux de Pissarro voulez-vous voir ? Vous pouvez choisir plusieurs critères</p>
 	<form name="ajaxform" id="ajaxform" action="artworks.php" method="POST">
 		<p> Les séjours </br>
-			<input type="checkbox" name="stay02" id="2" checked="checked"/> <label for="2">1883</label>
-			<input type="checkbox" name="stay01" id="1" checked="checked"/> <label for="1">début 1896</label></br>
+			<input type="checkbox" name="stay01" id="2" checked="checked"/> <label for="2">1883</label>
+			<input type="checkbox" name="stay02" id="1" checked="checked"/> <label for="1">début 1896</label></br>
 			<input type="checkbox" name="stay03" id="3" checked="checked"/> <label for="3">fin 1896</label>
 			<input type="checkbox" name="stay04" id="5" checked="checked"/> <label for="5">1898</label>
 		</p>
@@ -41,16 +40,16 @@
 		    <input type="submit" value="Valider" />
 		</p>
 </form>
-
 </div>
 
-<div class="contenu" id="selected_pov_artworks">
- <p>A la suite vont s'afficher mes résultats</p>
-</div>
+<!-- Affichage des résultats -->
 <div class="contenu">
- <p>L'oeuvre que vous avez sélectionné</p>
- <div class="contenu" id="selected_artwork">
- </div>
+  <p>A la suite vont s'afficher mes résultats</p>
+  <div class="contenu" id="selected_pov_artworks">
+  </div>
+  <p>L'oeuvre que vous avez sélectionné</p>
+  <div class="contenu" id="selected_artwork">
+  </div>
 </div>
 <!-- L'affichage de ma carte -->
 <div id="cadre_map">
