@@ -1,0 +1,22 @@
+/* Nouveau fichier CSS - pour version carte Bootstrap */
+
+#map{
+	width:100%;
+	height:100%;
+}
+#cadre_map{
+	height: 650px;
+}
+
+.vignette{
+	width: 33.3333%;
+	cursor: pointer;
+}
+
+.apercu {
+	width: 100%;
+}
+
+input label{
+	font-weight: normal;
+}
