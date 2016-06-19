@@ -17,6 +17,10 @@
 	width: 100%;
 }
 
-input label{
+ label{
 	font-weight: normal;
+}
+
+.text-long, p{
+	text-align: justify;
 }

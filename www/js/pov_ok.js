@@ -90,10 +90,12 @@ function sendAjaxForm(formulaire){
 					text_pov = data[tmp].pov_text;
 
 					var newpov_text = document.createElement('p');
-					newpov_text.id = 'pov_text_md';
 
 					document.getElementById('selected_artwork').appendChild(newpov_text);
-        	document.getElementById('pov_text_md').innerHTML = (marked(text_pov));
+
+						var newpov_textText = document.createTextNode(text_pov);
+
+						newpov_text.appendChild(newpov_textText);
 
 
 					//créé la nouvelle de résultats

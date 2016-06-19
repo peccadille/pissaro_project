@@ -12,6 +12,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
   <style type="text/css"></style>
+  <script src="js/marked.js"></script>
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,40 +33,11 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Pissarro à Rouen</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                  <li>
-                      <a href="#">Présentation</a>
-                  </li>
-                  <li>
-                      <a href="#">Cartographie</a>
-                  </li>
-                  <li>
-                      <a href="#">A propos</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-  </nav>
+  <?php include("menu.php"); ?>
   <!-- Page Content -->
   <div class="container-fluid">
       <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="contenu">
               <a href="#item" data-toggle="collapse">
                 <button type="button" class="btn btn-block btn-lg btn-default" aria-label="Left Align">
@@ -116,7 +88,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div id="cadre_map">
               <div id="map"></div>
               <script type="text/javascript" src="js/layers.js"></script>
@@ -124,7 +96,7 @@
               <script type="text/javascript" src="js/pov.js"></script>
           </div>
 <!-- Affichage des résultats -->
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="resultats">
               <div class="contenu" id="selected_artwork">
               </div>

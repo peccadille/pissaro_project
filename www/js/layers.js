@@ -2,11 +2,11 @@
 				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 				'Imagery © <a href="http://mapbox.com">Mapbox</a>';
             gaAttr = '<a href="http://gallica.fr">Gallica/BnF</a>' ;
-			mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+						mbUrl = 'https://a.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}';
             osmUrl = 'http://mapwarper.net/maps/tile/9091/{z}/{x}/{y}.png';
 
 	    var Rouen1889   = L.tileLayer(osmUrl, {id: 'http://mapwarper.net/maps/tile/9091/{z}/{x}/{y}.png', attribution: gaAttr}),
-		    streets  = L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7',   attribution: mbAttr});
+		    streets  = L.tileLayer(mbUrl, {id: 'peccadille.ne91c5di',   attribution: mbAttr, accessToken: 'pk.eyJ1IjoicGVjY2FkaWxsZSIsImEiOiJjaWVpNHRmZmwwMDJmdGJtOGFzaGZ6NHkyIn0.TEWfj8KDpIVFcSOot37mJg'});
 
 
 		var map = L.map('map', {
